@@ -61,7 +61,7 @@ helm upgrade --install k8s-puller howdevops/k8s-puller -f values.yaml
 **Note**: I use `upgrade --install` to install the chart if not installed, and upgrade the chart if the old version was installed.
 
 #### Uninstall the chart
-Install chart with `values.yaml` in previous step.
+Uninstall helm RELEASE `k8s-puller` in previous step.
 ```sh
 helm uninstall k8s-puller
 ```
