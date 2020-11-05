@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Base URL of our Helm repository.
-HELM_REPO_BASE_URL=https://howdevops.github.io/k8s-puller/archives
+HELM_REPO_BASE_URL=https://howdevops.github.io/helm-charts/archives
 
 function helm_index() {
 	echo "==> Indexing repository..."
