@@ -1,7 +1,7 @@
 apiVersion: {{ include "puller.detectdsversion" . | default "apps/v1" }}
 kind: DaemonSet
 metadata:
-  name: {{ include "puller.fullname" . }}
+  name: {{ include "puller.name" . }}
   labels:
 {{ include "puller.labels" . | indent 4 }}
 spec:
@@ -14,7 +14,7 @@ spec:
 {{ include "puller.selectorLabels" . | indent 8 }}
     spec:
       containers:
-      - name: {{ include "puller.fullname" . }}
+      - name: {{ include "puller.name" . }}
         image: "{{ .Values.app.image.repository }}:{{ .Chart.AppVersion }}"
         env:
         - name: IMAGES

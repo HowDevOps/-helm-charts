@@ -1,6 +1,16 @@
 apiVersion: v1
 entries:
-  puller:
+  k8s-puller:
+  - apiVersion: v2
+    appVersion: 2.2.2
+    created: "2021-02-25T09:34:05.604358+01:00"
+    description: A Helm chart for Kubernetes images puller
+    digest: 3d9d00571d312dd999b9f7c04eaca67e256ab9b8c30dc67c139dcb6739d6586c
+    name: k8s-puller
+    type: application
+    urls:
+    - https://howdevops.github.io/helm-charts/archives/k8s-puller-1.2.2.tgz
+    version: 1.2.2
   - apiVersion: v2
     appVersion: 2.2.1
     created: "2020-11-01T23:15:58.240561+01:00"
